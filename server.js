@@ -25,7 +25,7 @@ ioServer.on('connection', (client) => {
     console.log(`user ${client.id} sent message: ${message}`)
 
     // Verstuur het bericht naar alle clients
-    ioServer.emit('message', message)
+    ioServer.emit("message", `user ${client.id}: ` + message);
   })
 
   // Luister naar een disconnect van een gebruiker

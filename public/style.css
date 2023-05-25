@@ -71,7 +71,7 @@ section ul {
 
 section ul>li {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 0.8rem;
 }
 
 section form {
@@ -127,13 +127,36 @@ section form>button:active {
   color: red;
 }
 
+/* States */
+span.loading,
+span.empty,
+span.offline {
+  padding: 2rem;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+span.loading {
+  color: light-grey;
+}
+
+span.empty {
+  color: light-grey;
+}
+
+span.offline {
+  color: red;
+  display: none;
+}
+
 img {
   width: 55px;
 
   margin-top: 2rem;
 }
 
-.hexBig1, .hexBig2 {
+.hexBig1,
+.hexBig2 {
   width: 300px;
   height: 275px;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
